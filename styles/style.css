@@ -28,40 +28,39 @@
   list-style: none;
 }
 
-.header_link_active {
-  color: black;
-  text-decoration: none;
-}
-
 .header_link {
   border-bottom: thin solid currentColor;
   color: black;
   text-decoration: none;
 }
 
+.header_link_active {
+  border: unset;
+}
+
+
 .header_logo {
   display: block;
 }
 
+.address {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 140%;
+  color: black;
+}
+
 .header_address {
-  margin: 0 5px 0 0;
   justify-self: flex-end;
   width: 235px;
-  font-size: 18px;
+  margin: 0 5px 0 0;
   line-height: 138%;
   letter-spacing: 0;
 }
 
 .header_address-link {
-  border-bottom: thin solid currentColor;
   color: black;
-  text-decoration: none;
 }
-
-.header_address-text {
-  border-style: none;
-}
-
 
 .main {
   max-width: 1100px;
@@ -84,7 +83,7 @@
   inset: 0;
   /* Заполняет весь родительский контейнер */
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   /* Полупрозрачный черный фон */
 }
 
@@ -107,12 +106,12 @@
 
 .cover_title_aligned-text-center {
   align-self: center;
-  margin: 0 0 0 30px;
+  transform: translateX(20px);
 }
 
 .cover_title_aligned-text-right {
   align-self: flex-end;
-  margin: 0 -30px 0 0;
+  transform: translateX(30px);
 }
 
 .cover_description {
@@ -142,7 +141,6 @@
 }
 
 .lots {
-  min-height: 723px;
   padding: 180px 24px 155px;
 }
 
@@ -180,6 +178,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 30px;
   height: 100%;
   /* Минимальная высота карточки */
   padding: 48px 40px;
@@ -192,8 +191,6 @@
 }
 
 .card_type_book {
-  display: flex;
-  gap: 30px;
   background-image: url("../images/book.png");
 }
 
@@ -247,7 +244,7 @@
 }
 
 .about_title {
-  margin-left: 71px;
+  margin-left: 74px;
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
@@ -257,9 +254,11 @@
 .about_column-text {
   display: flex;
   flex-direction: column;
-  margin: 5px 0 0 335px;
+  margin: 9px 0 0 335px;
   font-weight: 400;
   font-size: 20px;
+  line-height: 24px;
+  gap: 24px;
 }
 
 
@@ -275,16 +274,10 @@
 
 .footer_addres {
   max-width: 265px;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 140%;
 }
 
 .footer_address-link {
-  border-bottom: thin solid currentColor;
   color: black;
-  text-decoration: none;
 }
 
 .footer_menu-list {
@@ -303,10 +296,6 @@
   border-style: none;
   text-decoration: none;
 
-}
-
-.footer_addres-text {
-  border-style: none;
 }
 
 .footer_social-list {
