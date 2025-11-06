@@ -101,17 +101,19 @@
 }
 
 .cover_title_aligned-text-left {
-  align-self: flex-start;
+  text-align: left;
 }
 
 .cover_title_aligned-text-center {
-  align-self: center;
-  transform: translateX(20px);
+  text-align: center;
+  margin-left: 30px;
+  
 }
 
 .cover_title_aligned-text-right {
-  align-self: flex-end;
-  transform: translateX(30px);
+  text-align: right;
+  margin-left: 613px;
+  
 }
 
 .cover_description {
@@ -127,7 +129,7 @@
   align-items: center;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 18px;
+  word-spacing: 19px;
   /*междусловами расстояние*/
 }
 
